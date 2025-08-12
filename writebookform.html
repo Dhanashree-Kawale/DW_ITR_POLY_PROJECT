@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+   <style>
+         *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body,html{
+        width: 100%;
+         
+    }
+    
+    nav{
+        background-color: #f88fb282;
+        display: flex;
+        align-items: center;
+        height: 60px;
+        width: 100%;
+        padding: 16px;
+    }
+    .nav-left{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 8px;
+    }
+   .nav-left> p{   
+         
+        font-family: "Irish Grover", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 26px;
+        color: #D91656;
+        
+     }
+
+     .form-fill{
+      display: flex;
+      flex-direction: row;
+      margin-top: 16px;
+      width: 100%;
+      
+     }
+
+     .left{
+       flex: 1;
+       width: 100%;
+       padding-top: 100px;
+       margin-left: 100px;
+
+     }
+     .right{
+      flex: 9;
+      
+     }
+
+     .thumbnail{
+      width: 100px;
+      height: 20vh;
+     }
+
+     .sq{
+      width: 200px;
+      height: 200px;
+      margin-bottom: 100px;
+      border: 1px dashed rgb(154, 150, 150);
+      border-radius: 12px;
+     }
+     .rec{
+      width: 200px;
+      height: 300px;
+      margin-bottom: 100px;
+      border: 1px dashed rgb(154, 150, 150);
+      border-radius: 12px;
+     }
+    form {
+             font-family: Arial, sans-serif;
+             width: 900px;
+             margin: 20px auto;
+             
+            
+  }
+  form h2{
+    color: #d4507c;
+  }
+
+  label {
+    color: rgba(0, 0, 0, 0.873);
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .radio-group {
+    display: flex;
+    gap: 15px; 
+    align-items: center;
+    margin-top: 5px;
+  }
+    .radio-group label {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    gap: 5px;
+  }
+
+  input[type="text"],
+  textarea,select  {
+    width: 100%;
+    padding: 6px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #f06292c2;
+     border-radius: 10px;
+  }
+
+  .right h3{
+    margin-top: 40px;
+    margin-bottom: 12px;
+
+  }
+
+  form p{
+    color:rgba(0, 0, 0, 0.692);
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+  .pink{
+    color: #D91656;
+  }
+  .blue{
+    color: rgba(0, 0, 255, 0.786);
+  }
+
+  .ack{
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.815);
+    margin-top: 50px;
+    text-align: left;
+    margin-left: 200px;
+  }
+  .Create{
+       margin-left: 280px; 
+      width: 40%;
+      padding: 10px;
+      background: #d6336cf7;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 12px;
+      margin-top: 30px;
+    }
+  
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+      <i class="fa-solid fa-book" style="scale:2; color: #D91656;"></i> <p>Novellophilies</p>
+      </div>
+    </nav>
+<div class="form-fill">
+  <div class="left">
+    <div class="thumbnail sq"><img src="https://via.placeholder.com/150" alt="Thumbnail">
+
+    </div>
+    <div class="thumbnail rec">
+      <img src="https://via.placeholder.com/150" alt="Thumbnail">
+
+    </div>
+  </div>
+  <div class="right">
+<form>
+  <h2>Fill details about your new book</h2>
+
+  <label for="booktitle">Book Title</label>
+  <input type="text" name="booktitle" id="Booktitle" placeholder="Enter upto 30 words">
+
+  <label>Type:</label>
+  <label style="display: inline-block; margin-right: 10px;">
+    <input type="radio" name="booktype" value="Novel"> Novel
+  </label>
+  <label style="display: inline-block; margin-right: 10px;">
+    <input type="radio" name="booktype" value="Literature"> Literature
+  </label>
+
+
+  <label>Orientation:</label>
+  <label style="display: inline-block; margin-right: 10px;">
+    <input type="radio" name="orientation" value="Female Oriented"> Female Oriented
+  </label>
+  <label style="display: inline-block; margin-right: 10px;">
+    <input type="radio" name="orientation" value="Male Oriented"> Male Oriented
+  </label>
+
+  
+  <label for="synopsis">Synopsis</label>
+  <textarea name="synopsis" id="synopsis" rows="6" placeholder=" Enter upto 1000 words"></textarea>
+
+  
+     <h3> CONTENT RATING SELF ASSESSMENT</h3>
+
+<p>All novels on NOVELLOPHILIES must now display a Content Rating. With visible Content Ratings, we can help users discover content that should be appropriate for their age group and align with their content preferences. To ensure the appropriate Content Rating is assigned to your series, please respond to the following questionnaire regarding the content of your series. Please note that ratings are subject to change at NOVELLOPHILIES sole discretion and without prior notice. The NOVELLOPHILIES <span class="blue">Community Policy and Uploading Guildelines </span>will remain the same. <span class="blue">Content Rating Guide.</span></p>
+
+ <label for="choice">Violent and graphic content</label>
+  <select id="choice" name="choice">
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+  </select>
+
+  <label for="choice">Profinity</label>
+  <select id="choice" name="choice">
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+  </select>
+
+  <label for="choice">Alcohol, drugs tobacoo</label>
+  <select id="choice" name="choice">
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+  </select>
+
+  <label for="choice">Sensitive themes and topics</label>
+  <select id="choice" name="choice">
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+  </select>
+     
+  <p class="ack" style="margin-bottom: 0;">I acknowledge that the assigned Content Rating of my series is</p>
+ <p class="ack" style="color: #D91656; margin-top: 0; font-weight: 600;">(Please complete the Self Assessment above to get the result)</p>
+<p class="ack" style="margin-top:20px ;">I agree to NOVELLOPHILIES Community Policy and Privacy.
+It is prohibited for anyone under the age of 13 to publish on NOVELLPHILIES</p>
+  
+
+<button type="submit" class="Create">Create </button>
+</form>
+
+</div>
+</div>
+
+</body>
+</html>
+
+
+
