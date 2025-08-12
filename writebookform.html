@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -95,11 +96,11 @@
   }
 
   label {
-    color: rgba(0, 0, 0, 0.873);
+    color: rgba(0, 0, 0, 0.966);
     display: block;
     margin-top: 8px;
     margin-bottom: 6px;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 18px;
   }
   .radio-group {
@@ -122,12 +123,13 @@
     margin-top: 5px;
     box-sizing: border-box;
     border: 1px solid #f06292c2;
-     border-radius: 10px;
+     border-radius: 8px;
   }
 
   .right h3{
     margin-top: 40px;
     margin-bottom: 12px;
+    color: rgba(18, 18, 18, 0.855);
 
   }
 
@@ -164,6 +166,20 @@
       margin-top: 30px;
     }
   
+        input[type="file"] {
+        display: none;
+    }
+
+    
+    .custom-file-label {
+        
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .mainlabel{
+      margin-top: 25px;
+    }
     </style>
 </head>
 <body>
@@ -186,10 +202,10 @@
 <form>
   <h2>Fill details about your new book</h2>
 
-  <label for="booktitle">Book Title</label>
+  <label for="booktitle mainlabel">Book Title</label>
   <input type="text" name="booktitle" id="Booktitle" placeholder="Enter upto 30 words">
 
-  <label>Type:</label>
+  <label class="mainlabel">Type:</label>
   <label style="display: inline-block; margin-right: 10px;">
     <input type="radio" name="booktype" value="Novel"> Novel
   </label>
@@ -198,7 +214,7 @@
   </label>
 
 
-  <label>Orientation:</label>
+  <label class="mainlabel">Orientation:</label>
   <label style="display: inline-block; margin-right: 10px;">
     <input type="radio" name="orientation" value="Female Oriented"> Female Oriented
   </label>
@@ -206,8 +222,12 @@
     <input type="radio" name="orientation" value="Male Oriented"> Male Oriented
   </label>
 
+  <label for="cover-file" class="custom-file-label mainlabel" >Choose Book Cover</label>
+    <input type="file" id="cover-file">
+    <span class="file-name" id="file-name">No file chosen</span>
+
   
-  <label for="synopsis">Synopsis</label>
+  <label for="synopsis" class="mainlabel">Synopsis</label>
   <textarea name="synopsis" id="synopsis" rows="6" placeholder=" Enter upto 1000 words"></textarea>
 
   
@@ -239,9 +259,9 @@
     <option value="no">No</option>
   </select>
      
-  <p class="ack" style="margin-bottom: 0;">I acknowledge that the assigned Content Rating of my series is</p>
+  <p class="ack" style="margin-bottom: 0;"><span>&#x2714</span> I acknowledge that the assigned Content Rating of my series is</p>
  <p class="ack" style="color: #D91656; margin-top: 0; font-weight: 600;">(Please complete the Self Assessment above to get the result)</p>
-<p class="ack" style="margin-top:20px ;">I agree to NOVELLOPHILIES Community Policy and Privacy.
+<p class="ack" style="margin-top:20px ;"><span>&#x2714; </span>I agree to NOVELLOPHILIES Community Policy and Privacy.
 It is prohibited for anyone under the age of 13 to publish on NOVELLPHILIES</p>
   
 
@@ -253,6 +273,3 @@ It is prohibited for anyone under the age of 13 to publish on NOVELLPHILIES</p>
 
 </body>
 </html>
-
-
-
