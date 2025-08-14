@@ -123,7 +123,7 @@
      .hero img{
         width: 100%;
         height: 450px;
-        opacity: 70%;
+       border-radius: 24px;
      }
 
      .hero-text{
@@ -445,3 +445,122 @@
       width: 0;
     }
    
+
+
+    
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+    }
+
+    footer {
+      margin-top: 30px;
+        background-color: #faa3c0f8;
+        color: #000;
+    }
+
+    /* Top section of footer */
+    .footer-top {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        max-width: 1200px;
+        margin: auto;
+        padding: 40px 20px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    .footer-column {
+        padding: 0 20px;
+        border-right: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    .footer-column:last-child {
+        border-right: none;
+    }
+
+    .footer-column h3 {
+        font-size: 15px;
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+
+    .footer-column ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer-column ul li {
+        margin-bottom: 8px;
+    }
+
+    .footer-column ul li a {
+        text-decoration: none;
+        color: #000;
+        font-size: 14px;
+    }
+
+    .footer-column ul li a:hover {
+        text-decoration: underline;
+    }
+
+    /* Social icons */
+    .social-icons {
+        display: flex;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .social-icons a {
+        font-size: 18px;
+        color: #000;
+        text-decoration: none;
+    }
+
+    /* Bottom bar */
+    .footer-bottom {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        gap: 16px;
+        padding: 15px 20px;
+    }
+
+    .nav-left{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 8px;
+    }
+
+    .nav-left> p{   
+         
+        font-family: "Irish Grover", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 26px;
+        color: #D91656;
+        
+     }
+
+    .footer-bottom img {
+        height: 35px;
+    }
+
+    .footer-buttons {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+    }
+
+    .footer-buttons select,
+    .footer-buttons button {
+        border: 1px solid #ccc;
+        padding: 6px 12px;
+        border-radius: 5px;
+        background: white;
+        cursor: pointer;
+        font-size: 14px;
+    }
