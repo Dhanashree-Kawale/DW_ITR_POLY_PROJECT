@@ -199,8 +199,8 @@
 <form>
   <h2>Fill details about your new book</h2>
 
-  <label for="booktitle mainlabel">Book Title</label>
-  <input type="text" name="booktitle" id="Booktitle" placeholder="Enter upto 30 words" required>
+  <label for="book-title mainlabel">Book Title</label>
+  <input type="text" name="booktitle" id="book-title" placeholder="Enter upto 30 words" required>
 
   <label class="mainlabel">Type:</label>
   <label style="display: inline-block; margin-right: 10px;">
@@ -221,8 +221,8 @@
 
 
   
- <label for="choice">Select Genre</label>
-  <select id="choice" name="choice" required>
+ <label for="book-genre">Select Genre</label>
+  <select id="book-genre" name="choice" required>
     <option value="Fantasy">Fantasy</option>
     <option value="Adventure">Adventure</option>
     <option value="Action">Action</option>
@@ -274,13 +274,13 @@
 It is prohibited for anyone under the age of 13 to publish on NOVELLPHILIES</p>
   
 
-<a href="index.html"><button type="button" class="Create">Create </button></a>
+<a href="publishedbooks.html"><button type="button" class="Create" onclick="saveBook()">Create </button></a>
 </form>
 
 </div>
 </div>
 
-<script>
+ <script>
 function previewCover() {
     const file = document.getElementById('cover-file').files[0];
     const preview = document.getElementById('cover-preview');
@@ -295,7 +295,38 @@ function previewCover() {
         preview.src = "https://via.placeholder.com/150"; // Default placeholder
     }
 }
-</script>
+
+let coverData = "";
+
+// Preview the uploaded cover
+document.getElementById("cover-file").addEventListener("change", function() {
+    const file = this.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            coverData = e.target.result; // Save image data for storage
+            document.getElementById("cover-preview").src = coverData;
+        }
+        reader.readAsDataURL(file);
+    }
+});
+
+// Save book details in localStorage
+function saveBook() {
+    const title = document.getElementById("book-title").value;
+    const genre = document.getElementById("book-genre").value;
+
+
+    let books = JSON.parse(localStorage.getItem("books")) || [];
+    books.push({ title, genre, cover: coverData });
+
+    localStorage.setItem("books", JSON.stringify(books));
+    alert("Book Published!");
+    window.location.href = "publishedbooks.html"; 
+}
+</script> 
+
+
 
 </body>
 </html>
