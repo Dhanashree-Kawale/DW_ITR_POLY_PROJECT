@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   let author = authors[authors.length - 1];
+  console.log(author);
+   
 
   if (author) {
     document.querySelector("#name").innerHTML = `Name : <b>${author.authorname}</b>`;
@@ -15,9 +17,15 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     document.querySelector(".profile").innerHTML = "<p>No profile found.</p>";
   }
-});
+   
 
 document.querySelector("#delete-acc").addEventListener("click",function(){
      alert("Deleting your account will make you lose all data!");
-     localStorage.removeItem("author");
+     if((authors.length-1)>=0){
+    authors.splice((authors.length-1),1);
+    localStorage.setItem("storedauthors",JSON.stringify(authors))
+     }  
+
+   document.querySelector(".profile").innerHTML = "<p>No profile found.</p>";
 })
+});

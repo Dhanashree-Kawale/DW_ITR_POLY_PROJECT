@@ -16,7 +16,8 @@ form.addEventListener("submit",function(e){
 
        localStorage.setItem("storedauthors",JSON.stringify(authors));
        
+       document.querySelector("#viewprofile").disabled = false;
 })
-          document.querySelector("#viewprofile").disabled = false;
+          
          
             
