@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/authorprofile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Profile</title>
 </head>
 <body>
   <div class="profile-container">
     <!-- Left Panel -->
-    <div class="left-panel">
+     
+    <div class="left-panel" style="position: relative;">
+      <div style=" height: 28px; width: 28px;  place-content: center; background-color: rgb(237, 180, 198); border-radius: 100px; position: absolute; top: 12px; left: 12px;color:#d91656;"><a href="index.html" ><i class="fa-solid fa-house-chimney" ></i></a></div>
       <div class="profile-pic">
         <img src="https://storage.googleapis.com/a1aa/image/5c7640be-8ea0-41b5-4154-f7a610f09413.jpg" alt="Profile">
         <div class="camera-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#000" d="M4 4h3l2-2h6l2 2h3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2m8 3a5 5 0 0 0-5 5a5 5 0 0 0 5 5a5 5 0 0 0 5-5a5 5 0 0 0-5-5m0 2a3 3 0 0 1 3 3a3 3 0 0 1-3 3a3 3 0 0 1-3-3a3 3 0 0 1 3-3"/></svg></div>
@@ -49,8 +53,8 @@
          <p>Deactivating will suspend your account, <br> 
           until you sign back in.</p>
        </div>
-       <div class="account-action" id="delete-acc">
-         <a href="joinasauthor.html">Delete Account</a>
+       <div class="account-action" ">
+         <span id="delete-acc"><a href="joinasauthor.html">Delete Account</a></span> 
          <p>Permanently delete your account <br>and all of your content.</p>
        </div>
         </div>
