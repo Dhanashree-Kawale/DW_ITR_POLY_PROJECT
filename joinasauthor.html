@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/joinasauthor.css">
+    <title>Join as Author</title>
+</head>
+<body>
+  <div class="author">
+    <h2>Welcome Author!</h2>
+  <div class="profile-container">
+    <!-- Left Panel -->
+    <div class="left-panel">
+      <div class="profile-pic">
+        <img src="https://storage.googleapis.com/a1aa/image/5c7640be-8ea0-41b5-4154-f7a610f09413.jpg" alt="Profile">
+        <div class="camera-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#000" d="M4 4h3l2-2h6l2 2h3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2m8 3a5 5 0 0 0-5 5a5 5 0 0 0 5 5a5 5 0 0 0 5-5a5 5 0 0 0-5-5m0 2a3 3 0 0 1 3 3a3 3 0 0 1-3 3a3 3 0 0 1-3-3a3 3 0 0 1 3-3"/></svg></div>
+      </div>
+     <h3>Maria Femanda</h3>
+     <p class="role">Author</p>
+     <a href="authorprofile.html"><button type="button" disabled id="viewprofile" style="color: white;   padding: 8px; border:none; border-radius: 6px; background-color:#f41d6ce6;">View Profile</button></a>
+
+   </div>
+
+    <!-- Right Panel -->
+    <div class="right-panel">
+       <h3>Bio & other details</h3>
+     <form>
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" name="fname" placeholder="Maria">
+        </div>
+        <div class="form-group">
+          <label>Pen Name</label>
+          <input type="text" name="penname" placeholder="Femanda">
+        </div>  
+        <div class="form-group">
+          <label for="username">User name</label>
+          <input type="text"  name="username" placeholder="_maria_f.65">
+       </div>
+       <div class="form-group">
+         <label>Gender</label>
+         <label class="gender"><input type="radio" name="gender" value="male"> Male</label>
+        <label class="gender"><input type="radio" name="gender" value="female"> Female</label>
+       </div>
+       <div class="form-group full-width">
+         <label>Bio</label>
+         <input type="text"  name="bio"  placeholder="I Love to write fiction stories... Connect with me...">
+       </div>
+       <div class="form-group">
+         <label>Email</label>
+         <input type="email"  name="email"  placeholder="mariafemanda@gmail.com">
+       </div>
+       <div class="form-group">
+         <label>Phone number</label>
+         <input type="text"  name="phno" placeholder="********47">
+       </div>
+       <div class="accopt" style="display: flex; gap: 10px;" >
+       <div class="form-group">
+         <button   id="createacc"  style="cursor: pointer; width: 140px;background-color:#f41d6ce6; color:white;border: none;padding: 6px; border-radius: 6px;margin-right: 200px;">Create Account</button>
+       </div>
+
+       <div class="account-action">
+         <a href="#">Deactivate Account</a>
+         <p>Deactivating will suspend your account 
+          <br>until you sign back in.</p>
+       </div>
+       <div class="account-action">
+         <a href="#">Delete Account</a>
+         <p>Permanently delete your account <br>and all of your content.</p>
+       </div>
+       </div>
+     </form>
+   </div>
+ </div>
+</div>
+<script src="./scripts/joinasauthor.js"></script>
+</body>
+</html>
