@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HOME</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="./styles/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="./styles/index.css">
 </head>
 
 <body>
@@ -17,23 +16,23 @@
         <div class="nav-left">
       <i class="fa-solid fa-book" style="scale:2;"></i> <p>Novellophilies</p>
       </div>
-      <div class="searchbar">
+      <div class="searchbar"><a href="./search.html">
         <span class="search-icon">
-      <i class="fa-solid fa-magnifying-glass" style="color: white;"></i>
-        </span>
-      <input type="text" placeholder="Enter Book title or author name" id="search-input">
+      <i class="fa-solid fa-magnifying-glass"></i>
+        </span></a>
+      <a href="./search.html" style="text-decoration: none;"><span>Browse</span></a>
       </div>
      <a href="./loginpg.html"><button class="nav-btn" id="login-btn"  style=" margin-left: 60px; ">Log in</button></a> 
-      <button class="nav-btn" style="background-color: white; color: #D91656; border: 1.5px solid #D91656; font-weight: 400;">Join as author </button>
+      <button class="nav-btn" id="joinasauthor" style="background-color: white; color: #D91656; border: 1.5px solid #D91656; font-weight: 400;">Join as author </button>
       <ul class="nav-icons">
         <a href="#"><li><i class="fa-solid fa-bell" ></i></li></a>
-        <a href="#"><li><i class="fa-solid fa-user" ></i></li></a>
+        <span class="profileicon"><a href="authorprofile.html"><li><i class="fa-solid fa-user" ></i></li></a></span>
         <a href="#"><li><i class="fa-solid fa-bell" ></i></li></a>
       </ul>
     </nav>
     <div class="nav-menu">
     <div class="nav-panel">
-         <span><i class="fa-solid fa-bars"></i></span> 
+        <span><i class="fa-solid fa-bars"></i></span> 
     </div>
      <div class="side-menu">
       <div class="side-menu-close">
@@ -41,8 +40,8 @@
       </div>
          <div class="side-menu-upper classics">
          <a href="#"><button><i class="fa-regular fa-house"></i> Home</button></a>
-         <a href="#"><button><i class="fa-solid fa-book-bookmark"></i> Library</button></a>
-         <a href="publishedbooks.html"><button><i class="fa-solid fa-upload"></i> Publish</button></a>
+         <a href="./library.html"><button><i class="fa-solid fa-book-bookmark"></i> Library</button></a>
+         <a href="./publishedbooks.html"><button><i class="fa-solid fa-upload"></i> Publish</button></a>
          <a href="#"><button><i class="fa-solid fa-chart-line"></i> Trending</button></a>
          <a href="#"><button><i class="fa-solid fa-gear"></i>  Settings</button></a>
     </div> 
@@ -50,12 +49,12 @@
     </div>
     <div class="side-menu-lower classics">
       <h4>Browse genre</h4>
-      <a href="#"><button>Action</button></a>
-      <a href="#"><button>Adventure</button></a>
-      <a href="#"><button>Fantasy</button></a>
-      <a href="#"><button>Love</button></a>
-      <a href="#"><button>Life</button></a>
-      <a href="#"><button>feminism</button></a>
+      <a href="./genre.html"><button>Action</button></a>
+      <a href="./genre.html"><button>Adventure</button></a>
+      <a href="./genre.html"><button>Fantasy</button></a>
+      <a href="./genre.html"><button>Love</button></a>
+      <a href="./genre.html"><button>Life</button></a>
+      <a href="./genre.html"><button>feminism</button></a>
      <div class="log-out"><a href="#"><button type="button" >Log out</button></a></div>
     </div>
     </div> <!--  side-menu closed -->
@@ -76,316 +75,16 @@ and contemporary masterpieces.</p>
         </div>
         </div> 
                       
-  <div class="featured-section">
-    <h2 style="margin-bottom: 16px;">Featured This Week</h2>
-    <div class="scroll-container">
-
-      <div class="card-container" id="cardContainer"> 
-      
-
-        <!-- Card 2 -->
-        <div class="book-card">
-          <img src="https://images.squarespace-cdn.com/content/5f7225834e8e3e72253bcc35/1621355101271-90VMV1EOG4M0HQ4ICIR0/project+hail+mary.jpg?format=1500w&content-type=image%2Fjpeg" alt="Project Hail Mary" />
-          <p class="category">Sci-Fi</p>
-          <h3>Project Hail Mary</h3>
-          <p class="author">Andy Weir</p>
-          <p class="desc">A gripping tale of survival and friendship...</p>
-         <div class="hero-btn-rating"> <span >⭐4.7Kviews</span>
-          <button class="read-btn">Read Now</button></div>
-        </div>
-
-        <!-- Card 3 -->
-         <div class="book-card">
-          <img src="https://pbs.twimg.com/profile_images/1308420787846737923/njqGO9F8_400x400.jpg" alt="The Seven Husbands" />
-          <p class="category">Romance</p>
-          <h3>The Seven Husbands...</h3>
-          <p class="author">Taylor Jenkins Reid</p>
-          <p class="desc">A captivating novel about a Hollywood icon...</p> 
-          <!-- <p class="rating">⭐ 4.7</p> -->
-         <div class="hero-btn-rating"> <span>⭐2Kviews</span>
-          <button class="read-btn">Read Now</button></div>
-        </div>
-           <!-- Card 3 -->
-         <div class="book-card">
-          <img src="https://pbs.twimg.com/profile_images/1308420787846737923/njqGO9F8_400x400.jpg" alt="The Seven Husbands" />
-          <p class="category">Romance</p>
-          <h3>The Seven Husbands...</h3>
-          <p class="author">Taylor Jenkins Reid</p>
-          <p class="desc">A captivating novel about a Hollywood icon...</p> 
-          <!-- <p class="rating">⭐ 4.7</p> -->
-          <div class="hero-btn-rating"> <span>⭐1.2Kviews</span>
-          <button class="read-btn">Read Now</button></div>
-        </div>
-           <!-- Card 3 -->
-         <div class="book-card">
-          <img src="https://pbs.twimg.com/profile_images/1308420787846737923/njqGO9F8_400x400.jpg" alt="The Seven Husbands" />
-          <p class="category">Romance</p>
-          <h3>The Seven Husbands...</h3>
-          <p class="author">Taylor Jenkins Reid</p>
-          <p class="desc">A captivating novel about a Hollywood icon...</p> 
-          <!-- <p class="rating">⭐ 4.7</p> -->
-            <div class="hero-btn-rating"> <span>⭐3Kviews</span>
-          <button class="read-btn">Read Now</button></div>
-        </div>
-           <!-- Card 3 -->
-         <div class="book-card">
-          <img src="https://pbs.twimg.com/profile_images/1308420787846737923/njqGO9F8_400x400.jpg" alt="The Seven Husbands" />
-          <p class="category">Romance</p>
-          <h3>The Seven Husbands...</h3>
-          <p class="author">Taylor Jenkins Reid</p>
-          <p class="desc">A captivating novel about a Hollywood icon...</p> 
-          <!-- <p class="rating">⭐ 4.7</p> -->
-            <div class="hero-btn-rating"> <span>⭐2.3Kviews</span>
-          <button class="read-btn">Read Now</button></div>
-        </div>
-           <!-- Card 3 -->
-         <div class="book-card">
-          <img src="https://pbs.twimg.com/profile_images/1308420787846737923/njqGO9F8_400x400.jpg" alt="The Seven Husbands" />
-          <p class="category">Romance</p>
-          <h3>The Seven Husbands...</h3>
-          <p class="author">Taylor Jenkins Reid</p>
-          <p class="desc">A captivating novel about a Hollywood icon...</p> 
-          <!-- <p class="rating">⭐ 4.7</p> -->
-           <div class="hero-btn-rating"> <span>⭐ 4.7</span>
-          <button class="read-btn">Read Now</button></div>
-           
-        </div>
-           <!-- Card 3 -->
-         <div class="book-card">
-          <img src="https://pbs.twimg.com/profile_images/1308420787846737923/njqGO9F8_400x400.jpg" alt="The Seven Husbands" />
-          <p class="category">Romance</p>
-          <h3>The Seven Husbands...</h3>
-          <p class="author">Taylor Jenkins Reid</p>
-          <p class="desc">A captivating novel about a Hollywood icon...</p> 
-          <div class="hero-btn-rating"> <span>⭐ 4.7</span>
-          <button class="read-btn">Read Now</button></div> 
-        </div>
-      </div>
-      
-
-
-    </div>
-  </div>
-        <div class="trending-content">
-        <div class="trending-text">
-         <h4>Top & Trending</h4>
-         <button>see all ></button>
-        </div>
-        <div class="trending-row">
-         <div class="trending-book1" style="width: 200px; background-color: #f2f1f2a3;padding: 16px; display: flex; flex-direction: column;  justify-content: center; border-radius: 12px;
-            align-items: center; box-shadow: 2px 2px 2px #d91657a2;">
-            <div class="trending-book-cover">
-                <img src="./assets/trending-book-cover1.jpg"/>  
-            </div>
-            <div class="trending-book-text">
-               <div class="book-title">A Million To One  </div>
-               <div class="book-info"><div class="book-genre">Life</div><div class="book-views" style="color: #D91656;">22.3M views</div></div>
-            </div>
-         </div>
-         <div class="trending-book1" style="width: 200px; background-color:#f2f1f2a3;padding: 16px; display: flex; flex-direction: column;  justify-content: center; border-radius: 12px;
-            align-items: center; box-shadow: 2px 2px 2px #d91657a2;">
-            <div class="trending-book-cover">
-                <img src="./assets/tranding-book-cover2.jpg"/>  
-            </div>
-            <div class="trending-book-text">
-               <div class="book-title">IIT Vs LOVE </div>
-               <div class="book-info"><div class="book-genre">Love</div><div class="book-views" style="color: #D91656;">1.3M views</div></div>
-            </div>
-         </div>
-         <div class="trending-book1" style="width: 200px; background-color: #f2f1f2a3;padding: 16px; display: flex; flex-direction: column;  justify-content: center; border-radius: 12px;
-            align-items: center; box-shadow: 2px 2px 2px #d91657a2;">
-            <div class="trending-book-cover">
-                <img src="./assets/trending-book-cover3.jpg"/>  
-            </div>
-            <div class="trending-book-text">
-               <div class="book-title">  Serenade of Dove </div>
-               <div class="book-info"><div class="book-genre">Love</div><div class="book-views" style="color: #D91656;">1.6M views</div></div>
-            </div>
-         </div>
-         <div class="trending-book1" style="width: 200px; background-color:#f2f1f2a3;padding: 16px; display: flex; flex-direction: column;  justify-content: center; border-radius: 12px;
-            align-items: center; box-shadow: 2px 2px 2px #d91657a2;">
-            <div class="trending-book-cover">
-                <img src="./assets/trending-book-cover5.jpg"/>  
-            </div>
-            <div class="trending-book-text">
-               <div class="book-title">  Princess of castle! </div>
-               <div class="book-info"><div class="book-genre">Fantasy</div><div class="book-views" style="color: #D91656;">2.7K views</div></div>
-            </div>
-         </div>
-         <div class="trending-book1" style="width: 200px; background-color: #f2f1f2a3;padding: 16px; display: flex; flex-direction: column;  justify-content: center; border-radius: 12px;
-            align-items: center; box-shadow: 2px 2px 2px #d91657a2;">
-            <div class="trending-book-cover">
-                <img src="./assets/trending-book-cover6.jpg"/>  
-            </div>
-            <div class="trending-book-text">
-               <div class="book-title"> Memory  </div>
-               <div class="book-info"><div class="book-genre">Life</div><div class="book-views" style="color: #D91656;">9.0K views</div></div>
-            </div>
-         </div>
-         <div class="trending-book1" style="width: 200px; background-color:#f2f1f2a3;padding: 16px; display: flex; flex-direction: column;  justify-content: center; border-radius: 12px;
-            align-items: center; box-shadow: 2px 2px 2px #d91657a2;">
-            <div class="trending-book-cover">
-                <img src="./assets/trending-book-cover7.jpg"/>  
-            </div>
-            <div class="trending-book-text">
-               <div class="book-title">  Past is rising  </div>
-               <div class="book-info"><div class="book-genre">Mystery</div><div class="book-views" style="color: #D91656;">5.4K views</div></div>
-            </div>
-         </div>
-          <div class="trending-book1" style="width: 200px; background-color:#f2f1f2a3;padding: 16px; display: flex; flex-direction: column;  justify-content: center; border-radius: 12px;
-            align-items: center; box-shadow: 2px 2px 2px #d91657a2;">
-            <div class="trending-book-cover">
-                <img src="./assets/trending-book-cover8.jpg"/>  
-            </div>
-            <div class="trending-book-text">
-               <div class="book-title">  The Fallen Gates  </div>
-               <div class="book-info"><div class="book-genre">Action</div><div class="book-views" style="color: #D91656;">5.4K views</div></div>
-            </div>
-         </div>
-          <div class="trending-book1" style="width: 200px; background-color:#f2f1f2a3;padding: 16px; display: flex; flex-direction: column;  justify-content: center; border-radius: 12px;
-            align-items: center; box-shadow: 2px 2px 2px #d91657a2;">
-            <div class="trending-book-cover">
-                <img src="./assets/trending-book-cover9.jpg"/>  
-            </div>
-            <div class="trending-book-text">
-               <div class="book-title">  Lunar Magic  </div>
-               <div class="book-info"><div class="book-genre">Fantasy</div><div class="book-views" style="color: #D91656;">5.4K views</div></div>
-            </div>
-         </div>
-          <div class="trending-book1" style="width: 200px; background-color:#f2f1f2a3;padding: 16px; display: flex; flex-direction: column;  justify-content: center; border-radius: 12px;
-            align-items: center; box-shadow: 2px 2px 2px #d91657a2;">
-            <div class="trending-book-cover">
-                <img src="./assets/trending-book-cover10-1.jpg"/>  
-            </div>
-            <div class="trending-book-text">
-               <div class="book-title">  Endless Forest </div>
-               <div class="book-info"><div class="book-genre">Mystery</div><div class="book-views" style="color: #D91656;">5.4K views</div></div>
-            </div>
-         </div>
-          <div class="trending-book1" style="width: 200px; background-color:#f2f1f2a3;padding: 16px; display: flex; flex-direction: column;  justify-content: center; border-radius: 12px;
-            align-items: center; box-shadow: 2px 2px 2px #d91657a2;">
-            <div class="trending-book-cover">
-                <img src="./assets/trending-book-cover11.jpg"/>  
-            </div>
-            <div class="trending-book-text">
-               <div class="book-title">  Parasite  </div>
-               <div class="book-info"><div class="book-genre">Sci-Fi</div><div class="book-views" style="color: #D91656;">5.4K views</div></div>
-            </div>
-         </div>
-          <div class="trending-book1" style="width: 200px; background-color:#f2f1f2a3;padding: 16px; display: flex; flex-direction: column;  justify-content: center; border-radius: 12px;
-            align-items: center; box-shadow: 2px 2px 2px #d91657a2;">
-            <div class="trending-book-cover">
-                <img src="./assets/trending-book-cover12.jpg"/>  
-            </div>
-            <div class="trending-book-text">
-               <div class="book-title">  Seven Killings  </div>
-               <div class="book-info"><div class="book-genre">Mystery</div><div class="book-views" style="color: #D91656;">5.4K views</div></div>
-            </div>
-         </div>
-        </div>
-        </div>
+        
         <div class="new-arrival">
-         <div class="new-arrival-content trending-content">
             <div class="new-arrival-text trending-text">
                 <h4>New Arrivals</h4>
-                <button>see all ></button>
             </div>
                <div class="new-arrival-row trending-row" style="margin-top: 16px;">
-                  <!-- <div class="new-arrival-card"></div> -->
-                     <div class="trending-book1 new-arrival-card" style="width: 200px; background-color:#f2f1f2a3;padding: 16px; display: flex; flex-direction: column;  justify-content: center; border-radius: 12px;
-            align-items: center; box-shadow: 2px 2px 2px #d91657a2;">
-            <div class="trending-book-cover">
-                <img src="./assets/trending-book-cover12.jpg"/>  
-            </div>
-            <div class="trending-book-text">
-               <div class="book-title">  Seven Killings  </div>
-               <div class="book-info"><div class="book-genre">Mystery</div><div class="book-views" style="color: #D91656;">5.4K views</div></div>
-            </div>
-         </div>
-                     <div class="trending-book1 new-arrival-card" style="width: 200px; background-color:#f2f1f2a3;padding: 16px; display: flex; flex-direction: column;  justify-content: center; border-radius: 12px;
-            align-items: center; box-shadow: 2px 2px 2px #d91657a2;">
-            <div class="trending-book-cover">
-                <img src="./assets/trending-book-cover12.jpg"/>  
-            </div>
-            <div class="trending-book-text">
-               <div class="book-title">  Seven Killings  </div>
-               <div class="book-info"><div class="book-genre">Mystery</div><div class="book-views" style="color: #D91656;">5.4K views</div></div>
-            </div>
-         </div>
-                     <div class="trending-book1 new-arrival-card" style="width: 200px; background-color:#f2f1f2a3;padding: 16px; display: flex; flex-direction: column;  justify-content: center; border-radius: 12px;
-            align-items: center; box-shadow: 2px 2px 2px #d91657a2;">
-            <div class="trending-book-cover">
-                <img src="./assets/trending-book-cover12.jpg"/>  
-            </div>
-            <div class="trending-book-text">
-               <div class="book-title">  Seven Killings  </div>
-               <div class="book-info"><div class="book-genre">Mystery</div><div class="book-views" style="color: #D91656;">5.4K views</div></div>
-            </div>
-         </div>
-                     <div class="trending-book1 new-arrival-card" style="width: 200px; background-color:#f2f1f2a3;padding: 16px; display: flex; flex-direction: column;  justify-content: center; border-radius: 12px;
-            align-items: center; box-shadow: 2px 2px 2px #d91657a2;">
-            <div class="trending-book-cover">
-                <img src="./assets/trending-book-cover12.jpg"/>  
-            </div>
-            <div class="trending-book-text">
-               <div class="book-title">  Seven Killings  </div>
-               <div class="book-info"><div class="book-genre">Mystery</div><div class="book-views" style="color: #D91656;">5.4K views</div></div>
-            </div>
-         </div>
-                     <div class="trending-book1 new-arrival-card" style="width: 200px; background-color:#f2f1f2a3;padding: 16px; display: flex; flex-direction: column;  justify-content: center; border-radius: 12px;
-            align-items: center; box-shadow: 2px 2px 2px #d91657a2;">
-            <div class="trending-book-cover">
-                <img src="./assets/trending-book-cover12.jpg"/>  
-            </div>
-            <div class="trending-book-text">
-               <div class="book-title">  Seven Killings  </div>
-               <div class="book-info"><div class="book-genre">Mystery</div><div class="book-views" style="color: #D91656;">5.4K views</div></div>
-            </div>
-         </div>
-                     <div class="trending-book1 new-arrival-card" style="width: 200px; background-color:#f2f1f2a3;padding: 16px; display: flex; flex-direction: column;  justify-content: center; border-radius: 12px;
-            align-items: center; box-shadow: 2px 2px 2px #d91657a2;">
-            <div class="trending-book-cover">
-                <img src="./assets/trending-book-cover12.jpg"/>  
-            </div>
-            <div class="trending-book-text">
-               <div class="book-title">  Seven Killings  </div>
-               <div class="book-info"><div class="book-genre">Mystery</div><div class="book-views" style="color: #D91656;">5.4K views</div></div>
-            </div>
-         </div>
-                     <div class="trending-book1 new-arrival-card" style="width: 200px; background-color:#f2f1f2a3;padding: 16px; display: flex; flex-direction: column;  justify-content: center; border-radius: 12px;
-            align-items: center; box-shadow: 2px 2px 2px #d91657a2;">
-            <div class="trending-book-cover">
-                <img src="./assets/trending-book-cover12.jpg"/>  
-            </div>
-            <div class="trending-book-text">
-               <div class="book-title">  Seven Killings  </div>
-               <div class="book-info"><div class="book-genre">Mystery</div><div class="book-views" style="color: #D91656;">5.4K views</div></div>
-            </div>
-         </div>
-                     <div class="trending-book1 new-arrival-card" style="width: 200px; background-color:#f2f1f2a3;padding: 16px; display: flex; flex-direction: column;  justify-content: center; border-radius: 12px;
-            align-items: center; box-shadow: 2px 2px 2px #d91657a2;">
-            <div class="trending-book-cover">
-                <img src="./assets/trending-book-cover12.jpg"/>  
-            </div>
-            <div class="trending-book-text">
-               <div class="book-title">  Seven Killings  </div>
-               <div class="book-info"><div class="book-genre">Mystery</div><div class="book-views" style="color: #D91656;">5.4K views</div></div>
-            </div>
-         </div>
-                     <div class="trending-book1 new-arrival-card" style="width: 200px; background-color:#f2f1f2a3;padding: 16px; display: flex; flex-direction: column;  justify-content: center; border-radius: 12px;
-            align-items: center; box-shadow: 2px 2px 2px #d91657a2;">
-            <div class="trending-book-cover">
-                <img src="./assets/trending-book-cover12.jpg"/>  
-            </div>
-            <div class="trending-book-text">
-               <div class="book-title">  Seven Killings  </div>
-               <div class="book-info"><div class="book-genre">Mystery</div><div class="book-views" style="color: #D91656;">5.4K views</div></div>
-            </div>
-         </div>
            
             </div>
          </div>
-        </div>
+        
     </section>
     <footer>
       <!-- Top section -->
@@ -445,6 +144,7 @@ and contemporary masterpieces.</p>
         </div>
     </div>
     </footer>
+     <div class="overlay" id="overlay" onclick="closeMenu()"></div>
            <script src="./scripts/script.js"></script> 
 </body>
 </html>

@@ -8,190 +8,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   
-   <style>
-         *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    body,html{
-        width: 100%;
-         
-    }
-    
-    nav{
-        background-color: #f88fb282;
-        display: flex;
-        align-items: center;
-        height: 60px;
-        width: 100%;
-        padding: 16px;
-    }
-    .nav-left{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        gap: 8px;
-    }
-   .nav-left> p{   
-         
-        font-family: "Irish Grover", system-ui;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 26px;
-        color: #D91656;
-        
-     }
-
-     .form-fill{
-      display: flex;
-      flex-direction: row;
-      margin-top: 16px;
-      width: 100%;
-      
-     }
-
-     .left{
-       flex: 1;
-       width: 100%;
-       padding-top: 100px;
-       margin-left: 100px;
-
-     }
-     .right{
-      flex: 9;
-      
-     }
-
-     .thumbnail{
-      width: 100px;
-      height: 20vh;
-     }
-
-     .sq{
-      width: 200px;
-      height: 200px;
-      margin-bottom: 100px;
-      border: 1px dashed rgb(154, 150, 150);
-      border-radius: 12px;
-     }
-     .rec{
-      width: 200px;
-      height: 300px;
-      margin-bottom: 100px;
-      border: 1px dashed rgb(154, 150, 150);
-      border-radius: 12px;
-     }
-    form {
-             font-family: Arial, sans-serif;
-             width: 900px;
-             margin: 20px auto;
-             
-            
-  }
-  form h2{
-    color: #d4507c;
-  }
-
-  label {
-    color: rgba(0, 0, 0, 0.966);
-    display: block;
-    margin-top: 8px;
-    margin-bottom: 6px;
-    font-weight: 500;
-    font-size: 18px;
-  }
-  .radio-group {
-    display: flex;
-    gap: 15px; 
-    align-items: center;
-    margin-top: 5px;
-  }
-    .radio-group label {
-    display: flex;
-    align-items: center;
-    font-weight: normal;
-    gap: 5px;
-  }
-
-  input[type="text"],
-  textarea,select  {
-    width: 100%;
-    padding: 6px;
-    margin-top: 5px;
-    box-sizing: border-box;
-    border: 1px solid #f06292c2;
-     border-radius: 8px;
-  }
-
-  .right h3{
-    margin-top: 40px;
-    margin-bottom: 12px;
-    color: rgba(18, 18, 18, 0.855);
-
-  }
-
-  form p{
-    color:rgba(0, 0, 0, 0.692);
-    font-size: 14px;
-    margin-bottom: 40px;
-  }
-  .pink{
-    color: #D91656;
-  }
-  .blue{
-    color: rgba(0, 0, 255, 0.786);
-  }
-
-  .ack{
-    font-size: 16px;
-    font-weight: 500;
-    color: rgba(0, 0, 0, 0.815);
-    margin-top: 50px;
-    text-align: left;
-    margin-left: 200px;
-  }
-  .Create{
-       margin-left: 280px; 
-      width: 40%;
-      padding: 10px;
-      background: #d6336cf7;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      margin-bottom: 12px;
-      margin-top: 30px;
-    }
-  
-        input[type="file"] {
-        display: none;
-    }
-
-    
-    .custom-file-label {
-        
-        border-radius: 5px;
-        cursor: pointer;
-    }
-    
-    .mainlabel{
-      margin-top: 25px;
-    }
-    </style>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+   <link rel="stylesheet" href="./styles/writebookform.css"
 </head>
-<body>
-    <nav>
+<body> 
+     <nav>
         <div class="nav-left">
       <i class="fa-solid fa-book" style="scale:2; color: #D91656;"></i> <p>Novellophilies</p>
       </div>
     </nav>
+    <div class="nav-panel">
+         <a href="index.html"><span><i class="fa-solid fa-house"></i></span></a> 
+    </div>
 <div class="form-fill">
   <div class="left">
     <div class="thumbnail rec">
-  <img id="cover-preview" src="https://via.placeholder.com/150" alt="Book Cover" style="width:100%; height:100%; object-fit:cover; border-radius:12px;">
+  <img id="cover-preview" src=" " alt="Book Cover" style="width:100%; height:100%; object-fit:cover; border-radius:12px;">
 </div>
 
   </div>
@@ -201,6 +33,9 @@
 
   <label for="book-title mainlabel">Book Title</label>
   <input type="text" name="booktitle" id="book-title" placeholder="Enter upto 30 words" required>
+
+  <!-- <label for="Author mainlabel">Author Name</label>
+  <input type="text" name="Author" id="Author" placeholder="" readonly required> -->
 
   <label class="mainlabel">Type:</label>
   <label style="display: inline-block; margin-right: 10px;">
@@ -213,16 +48,17 @@
 
   <label class="mainlabel">Orientation:</label>
   <label style="display: inline-block; margin-right: 10px;">
-    <input type="radio" name="orientation" value="Female Oriented" > Female Oriented
+    <input type="radio" name="orientation" value="Female Oriented" required > Female Oriented
   </label>
   <label style="display: inline-block; margin-right: 10px;">
-    <input type="radio" name="orientation" value="Male Oriented"> Male Oriented
+    <input type="radio" name="orientation" value="Male Oriented" required> Male Oriented
   </label>
 
 
   
  <label for="book-genre">Select Genre</label>
   <select id="book-genre" name="choice" required>
+    <option value="">Select</option>
     <option value="Fantasy">Fantasy</option>
     <option value="Adventure">Adventure</option>
     <option value="Action">Action</option>
@@ -232,14 +68,16 @@
   </select>
 
   <label for="cover-file" class="custom-file-label mainlabel" >Choose Book Cover</label>
-    <input type="file" required id="cover-file" accept="image/*" onchange="previewCover()">
+    <input type="file" required id="cover-file" accept="image/*" onchange="previewCover()" >
     <span class="file-name" id="file-name">No file chosen</span>
 
   
   <label for="synopsis" class="mainlabel">Synopsis</label>
-  <textarea name="synopsis" required id="synopsis" rows="6" placeholder=" Enter upto 1000 words"></textarea>
+  <textarea name="synopsis" required id="synopsis" rows="3" placeholder=" Enter upto 100 words"></textarea>
 
-  
+  <label for="story" class="mainlabel">Story goes here</label>
+  <textarea name="story" required id="story" rows="8" placeholder=" Please write your story here"></textarea>
+
      <h3> CONTENT RATING SELF ASSESSMENT</h3>
 
 <p>All novels on NOVELLOPHILIES must now display a Content Rating. With visible Content Ratings, we can help users discover content that should be appropriate for their age group and align with their content preferences. To ensure the appropriate Content Rating is assigned to your series, please respond to the following questionnaire regarding the content of your series. Please note that ratings are subject to change at NOVELLOPHILIES sole discretion and without prior notice. The NOVELLOPHILIES <span class="blue">Community Policy and Uploading Guildelines </span>will remain the same. <span class="blue">Content Rating Guide.</span></p>
@@ -276,57 +114,8 @@ It is prohibited for anyone under the age of 13 to publish on NOVELLPHILIES</p>
 
 <a href="publishedbooks.html"><button type="button" class="Create" onclick="saveBook()">Create </button></a>
 </form>
-
 </div>
 </div>
-
- <script>
-function previewCover() {
-    const file = document.getElementById('cover-file').files[0];
-    const preview = document.getElementById('cover-preview');
-
-    if (file) {
-        const reader = new FileReader();
-        reader.onload = function(e) {
-            preview.src = e.target.result; // Set image to uploaded file
-        }
-        reader.readAsDataURL(file);
-    } else {
-        preview.src = "https://via.placeholder.com/150"; // Default placeholder
-    }
-}
-
-let coverData = "";
-
-// Preview the uploaded cover
-document.getElementById("cover-file").addEventListener("change", function() {
-    const file = this.files[0];
-    if (file) {
-        const reader = new FileReader();
-        reader.onload = function(e) {
-            coverData = e.target.result; // Save image data for storage
-            document.getElementById("cover-preview").src = coverData;
-        }
-        reader.readAsDataURL(file);
-    }
-});
-
-// Save book details in localStorage
-function saveBook() {
-    const title = document.getElementById("book-title").value;
-    const genre = document.getElementById("book-genre").value;
-
-
-    let books = JSON.parse(localStorage.getItem("books")) || [];
-    books.push({ title, genre, cover: coverData });
-
-    localStorage.setItem("books", JSON.stringify(books));
-    alert("Book Published!");
-    window.location.href = "publishedbooks.html"; 
-}
-</script> 
-
-
-
+<script src="./scripts/writebookform.js"></script>
 </body>
 </html>

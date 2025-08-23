@@ -7,7 +7,11 @@
   <title>NovelloPhilies </title>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
-  
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
 </head>
 <body>
 
@@ -42,18 +46,18 @@
       <p>Log in to continue your journey</p>
       <form >
       <label for="username" class="label">Username</label>
-      <input type="text" placeholder="Enter your username" class="input-field" id="username"/>
+      <input type="text" placeholder="Enter your username" required class="input-field" id="username"/>
       <label for="password" class="label">Password</label>
-      <input type="password" placeholder="Password" class="input-field" id="password"/>
+      <input type="password" placeholder="Password" required  class="input-field" id="password"/>
       <a href="#" class="forgot">Forgot Password?</a>
       <button type="submit" class="login-btn">Login</button>
       <p class="para" style="margin-top: 0px;" >or</p>
-      <button class="author-btn">Join as Author</button>
+      <button class="author-btn " type="button" ><a href="joinasauthor.html" style="color: white; text-decoration: none;">Join as Author</a></button>
       </form>
       <p>Sign in with</p>
       <div class="social-login">
         <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple" />
-        <img src="./assets/Icons8.zip" alt="Google" />
+         <span style="position: relative;top: -8px;margin: 0px 8px;"><i class="fa-brands fa-google" style="scale: 2;"></i></span>
         <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Facebook_Logo.png" alt="Facebook" />
       </div>
       <p class="signup">Don't have an account? <a href="./index.html">Signup</a></p>
