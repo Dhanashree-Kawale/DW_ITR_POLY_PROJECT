@@ -19,7 +19,7 @@
     /* Left side */
      .left {
       flex: 0.8;
-      background: url('https://www.bing.com/th/id/OIP.PeUdhmgyRclNBqI5tk8GnQHaKX?w=160&h=211&c=8&rs=1&qlt=70&r=0&o=7&cb=thws4&dpr=1.3&pid=3.1&rm=3') no-repeat center center/cover;
+      background: url("../assets/loginpgbg.jpeg") no-repeat center center/cover;
       display: flex;
       align-items: center;
       justify-content: center;

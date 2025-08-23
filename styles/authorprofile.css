@@ -93,6 +93,7 @@ body {
 
 .right-panel {
   width: 70%;
+  height: auto;
   padding: 20px;
   flex: 75%;
   margin-top: 10px;
@@ -106,17 +107,41 @@ body {
   margin-bottom: 20px;
 }
 
+.info1 span{
+  flex-wrap: nowrap;
+  flex: 1;
+}
 
 .form-group {
   height: auto;
   width: 96%;
-  
   display: flex;
   flex-direction: column;
   align-items: start;
   gap: 12px;
 } 
+.form-group div{
+  width: 100%;
+  height: 18px;
+  padding: 0px 0px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 
+}
+.personal-publish{
+  margin: 30px 4px 10px 0px;
+  width: 100%;
+  height: 260px;
+   
+}
+.personal-publish h3{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2px;
+  border-bottom: 0.5px solid rgb(196, 195, 195);
+}
 .form-group.full-width {
   flex: 1 1 100%;
 }
@@ -162,7 +187,121 @@ body {
 }
 
 
+ /* publish book css */
 
+
+  .nav-panel span{
+        width: 32px;
+        height: 30px;
+        background-color:white;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 12px;
+        color: #D91656;
+        
+     }
+
+  .btntounpublish{
+        display: flex;
+        justify-content: space-between;
+        width: auto;
+        gap: 10px;
+        margin-right: 12px;
+        
+     }
+     .btntounpublish button{
+       background-color:#D91656;
+        color: white;
+        border: none;
+        width: 60px;
+        padding: 4px;
+        border-radius: 4px;
+        cursor: pointer;
+     }
+      .done{
+        visibility: hidden;
+     }
+     section{
+        margin: 12px;
+     }
+.book-card {
+   display:inline-block;
+    margin: 10px;
+    position: relative;
+    background-color: #d9165747;
+    width: 165px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    cursor: pointer;
+}
+
+h2{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.book-card img {
+    width: 100%;
+    object-fit: cover;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    height: 150px;
+    cursor: pointer;
+
+}
+.btitle{
+    padding-left: 7px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.bookinfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0px 8px 8px 8px;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.addtolibrary{
+    width: 28px;
+    height: 28px;
+    color: white;
+    background-color: #D91656;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+
+}
+
+.unpublish{
+    width: 28px;
+    height: 28px;
+     border-radius: 100%; 
+    background-color: #D91656;
+    color: white;
+    padding-bottom: 4px;
+    font-weight: 800;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    visibility: hidden;
+}
 
 
 
