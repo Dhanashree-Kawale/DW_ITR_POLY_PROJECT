@@ -1,0 +1,156 @@
+         *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+   
+    
+    nav{
+        background-color: #fca3b0;
+        display: flex;
+        align-items: center;
+        height: 60px;
+        width: 100%;
+        padding: 16px;
+    }
+    .nav-left{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 8px;
+    }
+   .nav-left> p{   
+         
+        font-family: "Irish Grover", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 26px;
+        color: #D91656;
+        
+     }
+
+      .nav-panel{
+        width: 100%;
+        height: 40px;
+        background-color: #ee0c3dc3;
+        display: flex;
+        align-items: center;
+        box-shadow: 0px 0px 1px #D91656;
+       margin-bottom: 16px; 
+        
+     }
+     .nav-panel span{
+        width: 32px;
+        height: 30px;
+        background-color:rgba(255, 255, 255, 0.907);
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 12px;
+        color: #D91656;
+     }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #fff;
+}
+
+.search-section {
+  max-width: 900px;
+  margin: auto;
+}
+
+.search-box {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  background-color:rgba(237, 234, 234, 0.9);
+  border-radius: 7px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+ .category-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 75px;
+  padding-top: 18px;
+}
+
+.category-buttons button {
+  width: 120px; 
+  height: 40px;
+  background: white; 
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #4f4f4f;
+  cursor: pointer;
+  text-align: center;
+  line-height: 40px; 
+  white-space: nowrap; 
+ } 
+
+.category-buttons button:hover {
+  background: #f3f3f3;
+}
+
+.main-section {
+  max-width: 900px;
+  margin: 40px auto 0;
+}
+
+.main-section h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.cards {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 190px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 2px 5px rgba(42, 1, 1, 0.958);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.info {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 4px;
+}
+
+.info h3 {
+  font-size: 15px;
+  margin: 0 0 4px;
+}
+
+.category {
+  color: #888;
+  font-size: 13px;
+  margin: 0;
+}
+
+.views {
+  font-size: 13px;
+  color: #d14;
+  margin-top: 3px;
+}  
+
+.smallinfo{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}

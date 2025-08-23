@@ -1,0 +1,232 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: white;
+    }
+ 
+    nav{
+        background-color: #fca3b0;
+        display: flex;
+        align-items: center;
+        height: 60px;
+        width: 98%;
+        padding: 16px;
+    }
+    .nav-left{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 8px;
+    }
+   .nav-left> p{   
+         
+        font-family: "Irish Grover", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 26px;
+        color: #D91656;
+        
+     }
+
+      .nav-panel{
+        width: 100%;
+        height: 40px;
+        background-color: #ee0c3dc3; 
+        display: flex;
+        align-items: center;
+        box-shadow: 0px 0px 1px #ee0c3dc3;
+       margin-bottom: 16px; 
+      }
+        
+
+     .nav-panel span{
+        width: 32px;
+        height: 30px;
+        background-color:rgba(255, 255, 255, 0.907);
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 12px;
+        color: #D91656;
+     }
+    .head{
+      background-color: #f21b6a;
+      height: 15px;
+    }
+    .logo {
+      font-weight: bold;
+      font-size: 20px;
+      margin-right: 20px;
+    }
+    .logo> p{
+        font-style: normal;
+        font-size: 26px;
+        color: #D91656;
+        
+    }
+    .search-bar {
+      flex: 1;
+    }
+    .search-bar input {
+      width: 60%;
+      padding: 6px 10px;
+      border-radius: 10px;
+      border: none;
+    }
+    .login-btn {
+       background-color: #d91657c3;
+
+      color:white;
+      border: none;
+      padding: 6px 15px;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      margin: 20px;
+     }
+     .icon {
+      margin-left: 10px;
+      cursor: pointer; 
+      
+     } 
+
+    .library-container {
+      padding: 20px;
+    }
+    h2 {
+      margin-bottom: 15px;
+    }
+    .tabs {
+      display: flex;
+      gap: 20px;
+      border-bottom: 2px solid #ccc;
+      margin-bottom: 20px;
+      justify-content: space-between;
+    }
+    .tabs span {
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .btnedit{
+      display: flex;
+      gap: 10px;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    .edit {
+      color: #f21b6a;
+      cursor: pointer;
+      margin-left: auto;
+    }
+
+    .done{
+       color: #f21b6a;
+      cursor: pointer;
+      visibility: hidden;
+      
+    }
+  
+    .book-list {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .book-card {
+      position: relative;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: 180px;
+      text-align: center;
+    }
+    .book-card img {
+      width: 100%;
+      height: 210px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+    .info{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+    }
+    .book-title {
+      font-weight: bold;
+      margin: 0px 0 5px;
+      text-align: left;
+      padding-left: 7px;
+      
+    }
+    .Category {
+      font-size: 14px;
+      color: gray;
+      display: flex;
+  
+    }
+    .views {
+      color: #f21b6a;
+      font-weight: bold;
+    }
+    
+    .info {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 8px 8px;
+        font-size: 12px;
+        align-items: baseline;
+    }
+    
+    .removefromlibrary{
+      position: absolute;
+      top: 8px ;
+      right: 8px;
+      width: 28px;
+      height: 28px;
+      border-radius: 100px;
+      font-weight: 800;
+      align-items: center;
+      background-color:#D91656;
+      color:white;
+      border: none;
+      visibility: hidden;
+    }
+    
+    
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: #d60056;
+    }
+    
+     .nav-panel span{
+        width: 32px;
+        height: 30px;
+        background-color:white;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 12px;
+        
+     }
+     .nav-panel{
+        width: 100%;
+        height: 40px;
+        background-color: #d91657c3;
+        display: flex;
+        align-items: center;
+        box-shadow: 0px 0px 1px #D91656;
+     }
+    
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+   
+   
